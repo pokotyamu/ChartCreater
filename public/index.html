@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>タイトルを指定する</title>
+  </head>
+  <body>
+
+    <form method="post" action="localhost:3000/lines/show">
+      <p><input type="submit" value="ご意見を送信" /></p>
+
+    </form>
+  </body>
+
+
+
+  <script type="text/javascript">
+    (function() {
+    var onload = window.onload;
+    window.onload = function(){
+    if (typeof onload == "function") onload();
+    var options = { "title": { "text": "ItemXXXの在庫の推移" },"legend": { "layout": "vertical","style": {  } },"xAxis": { "categories": [ 1,3,5,7 ] },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "sample" },"subtitle": {  },"series": [{ "name": "在庫数","data": "[400,300,100,800]" }] };
+    window.chart_sample = new Highcharts.Chart(options);
+    };
+    })()
+  </script>
+
+
+</html>
+
